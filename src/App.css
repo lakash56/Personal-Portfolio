@@ -82,3 +82,89 @@ h1,h2,h3,h4,h5,h6{
     transform: rotate(360deg);
   }
 }
+
+nav.navbar{
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32 ease-in-out;
+}
+nav.navbar.scrolled{
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+nav.navbar a.navbar-brand{
+  width: 9%;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link{
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link:active{
+  opacity: 1;
+}
+
+span.navbar-text{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Extra padding between social icons and the 'Let's Connect' button */
+.social-icon {
+  margin-left: 14px; /* Adjust as needed */
+  display: inline-block;
+}
+
+.social-icon a{
+  width: 42px;
+  height: 42px;
+  background-color: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(225,225,225,0.5);
+}
+.social-icon a::before{
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 50%;
+  transform: ;
+}
+
+/* Styling for the 'Let's Connect' button */
+button.vvd {
+  background-color: transparent;
+  border: 1px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.vvd:hover {
+  background-color: white;
+  color: black; /* Changes text color on hover */
+}
+
+/* Styling for the navbar when scrolled */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background when scrolled */
+}
